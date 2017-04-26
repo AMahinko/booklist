@@ -1,0 +1,8 @@
+
+
+
+<% @books.each do |book| %>
+<h1> <%= book.title %> <%= "&#10003;".html_safe if book.already_read == true %> </h1>
+<h2><%= book.author %></h2>
+<p>----------------------------------------------------------------</p>
+<% end %>
